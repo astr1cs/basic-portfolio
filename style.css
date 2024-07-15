@@ -8,25 +8,27 @@
     margin: 0;
     font-family: "Roboto", sans-serif;
     padding: 0;
-    color: var(--red);
+   color: var(--red);
+   overflow-x: hidden;
+  
 }
-.parent{
-    width: 100%;
+.parent-texts{
+    overflow: hidden;
+    
     height:600px;
-    background-image:linear-gradient(to bottom ,#ffcfe8,#ffe7f3);
     color: var(--red);
+   
    display: flex;
    justify-content: center;
    align-items: center;
-   flex-direction: column;
    position: relative;
-  
-  
+   background-image:linear-gradient(to bottom ,#ffcfe8,#ffe7f3);
+
 }
 
 .heading-texts{
     display: block;
-    position: absolute;
+    
   
  
 }
@@ -35,36 +37,29 @@
     border-bottom: 1px solid var(--red);
 }
 .heading-texts h2{
+    padding: 10px;
 font-family: "Playwrite HR", cursive;;
 font-size: 5rem;
 }
 .heading-texts h4{
 font-family: "Roboto", sans-serif;
-
 font-size: 3rem;
 justify-content: left;
-padding: 2rem;
+padding: 0;
 text-align:center;
+overflow-y: hidden;
 }
-.buildings-image{
-    display: block;
-    position: absolute;
-    bottom: 0;
-   
-}
-.buildings-image img{
-    background-size:contain;
-    display: none;
-}
+
+
 #cloud1{
     position: absolute;
     left: 9%;
-    bottom: 2%;
+    bottom: 0;
 }
 #cloud2{
-    position: absolute;
+    position:absolute ;
     right: 9%;
-    top: 5%;
+    top: 2%;
 }
 
 .main-elements{
@@ -76,9 +71,7 @@ text-align:center;
  align-items: center;
  position: relative;
     margin-top: 1%;
-    
-
-
+   
 }
 .headshot-image{
     margin-top: 2%;
@@ -95,7 +88,6 @@ text-align:center;
     text-align: center;
     max-width: 100%;
     display: block;
-   
     padding: 10px;
 }   
 .main-texts h2{
@@ -105,7 +97,7 @@ text-align:center;
 }
 
 .main-texts p{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-top: 3%;
    width: 900px;
     color: black;
@@ -134,7 +126,6 @@ letter-spacing: 1px;
 .gif img{
    height: 170px;
    width: 170px;
- 
 
 }
 .skill-texts{
@@ -143,7 +134,7 @@ letter-spacing: 1px;
     color:black;
    display: block;
    max-width: 400px;
-   flex-wrap: wrap;
+  
   position: relative;
  
    
@@ -156,66 +147,74 @@ letter-spacing: 1px;
  
 }
 .skill-texts p{
-    margin-top: 3%;
+    margin-top: 2%;
+    padding: 5px;
     max-width: 100%;
     color:black;
     text-align: left;
     font-size: 1.2rem;
-
+    display: block;
 }
 .footer{
     margin-top: 0;
-    max-width: 100%;
+   width: 100%;
     text-align: center;
-    display: block;
    
     position: relative;
 }
 .contacts{
     margin-top: 0;
-    
    
 }
 .contacts h2{
+    margin-top: 30px;
     font-size: 2rem;
+    padding: 5px;
 }
 .contacts h4{
     margin-top: 20px;
     color: black;
+    padding: 5px;
    
 }
 .contacts p{
-    display: inline-flex;
-   align-items: center;
-   justify-content: center;
-    width: 600px;
-   
+    padding: 5px;
+    display: flex;
+    width: 40%;
+    margin-left: 30%;
     margin-top: 10px;
-    margin-bottom: 30px;
+    text-align: center;
     padding: 10px;
     color: black;
 }
-.buttons{
-    margin-bottom: 30px;
+
+
+/* Custom button styles */
+.custom-button {
+    background-color:var(--red);
  
-
-}
-.buttons a{
-    padding: 10px 20px;
-         border-radius: 10px;
-      background-color: var(--red);
-        text-decoration: none;
-        color: white;
-     
-        transition: transform  0.4s ease;
+   
+    border-radius: 10px; 
+    padding: 10px 20px; 
+    font-size: 1rem; 
+   
+    display: inline-block; /* Ensure the button fits content */
+    text-align: center; 
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
 }
 
-.buttons a:hover {
-    transform: scale(1.2);
-    background-color: #f17676;
+.custom-button a {
+    text-decoration: none;
+    color: white; 
 }
+.custom-button :-moz-any-link:hover {
+    background-color: #f17676; 
+    transform: scale(1.1);
+}
+
 
 .links{
+    margin-top: 25px;
     width: 100%;
     height: 100px;
     text-align: center;
@@ -234,4 +233,166 @@ letter-spacing: 1px;
     position: absolute;
     bottom: 5px;
     color: white;
+}
+@media  (max-width:1000px)
+{
+
+
+    .parent-texts{
+        overflow: hidden;
+        height:600px;
+        display: flex;
+        justify-content: center;
+        color: var(--red);
+        align-items: center;
+        position: relative;
+       background-image:linear-gradient(to bottom ,#ffcfe8,#ffe7f3);
+    
+    }
+    .heading-texts h2{
+        width: 100%;
+        padding: 0px;
+        margin-right: 15%;
+    font-family: "Playwrite HR", cursive;;
+    font-size: 5rem;
+    }
+    .heading-texts p{
+        width: 100%;
+       
+       
+   
+    }
+    .headshot-image img{
+        width: 50%;
+        margin-left: 25%;
+        height: auto;
+        border-radius: 50%;
+        background-size: cover;
+        
+    }
+    .main-elements{
+  
+        width: 100%;
+        display: block;
+     position: relative;
+       
+       
+    }
+    .main-texts{
+        text-align: center;
+        max-width: 100%;
+        display:block;
+        
+    }   
+    .main-texts h2{
+      font-size: 2.5rem;
+      margin-top: 5%;
+        letter-spacing: 2px;
+    }
+    
+    .main-texts p{
+        display: block;
+        font-size: 1.2rem;
+        margin-top: 3%;
+
+        width: 100%;
+        color: black;
+        border: 1px solid transparent;
+        
+    }
+    .skill-texts{
+  
+        padding-left: 16px;
+        color:black;
+    
+       
+    
+       left: 0%;
+
+      position: relative;
+     
+    }
+    .gif {
+        width:50%;
+        left: 25%;
+       position: relative;
+    }
+
+
+
+
+}
+@media (max-width:590px)
+{
+    .skill-texts{
+  
+        display: inline-block;
+        color:black;
+      position: relative;
+     
+       
+    }
+    .skill-texts h2{
+        margin-top: 10px;
+        font-size: 2rem;
+        text-align: center;
+      
+     
+    }
+    .skill-texts p{
+        margin-top: 3%;
+        width: 100%;
+        color:black;
+        text-align: center;
+        font-size: 1.2rem;
+        
+    }
+    .gif-text-align{
+        margin-top: 5%;
+        width: 100%;
+        margin-left: 0%;
+        height: 400px;
+        display: flex;
+        justify-self: center;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+      
+    }
+  
+    .gif img{
+        height: 170px;
+        width: 170px;
+        position: relative;
+     }
+
+     .contacts p{
+        display: block;
+        text-align: center;
+  
+        width: 100%;
+       
+        margin-left: 0%;
+      
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 10px;
+        color: black;
+    }
+
+
+     }
+@media (max-width:455px)
+{
+    .heading-texts h4{
+        position: relative;
+        text-align: left;
+        }
+        #cloud1{
+            padding: 0;
+            left: 0;
+            bottom: 0;
+            display: block;
+            position: absolute;
+        }
 }
