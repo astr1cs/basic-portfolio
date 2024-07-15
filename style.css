@@ -87,6 +87,7 @@ overflow-y: hidden;
 .main-texts{
     display: inline-block;
     width: 100%;
+    text-align: center;
 
 }   
 .main-texts h2{
