@@ -1,0 +1,237 @@
+:root{
+    --red:#FF5757;
+     
+
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    padding: 0;
+    color: var(--red);
+}
+.parent{
+    width: 100%;
+    height:600px;
+    background-image:linear-gradient(to bottom ,#ffcfe8,#ffe7f3);
+    color: var(--red);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   position: relative;
+  
+  
+}
+
+.heading-texts{
+    display: block;
+    position: absolute;
+  
+ 
+}
+.programmer-underline
+{
+    border-bottom: 1px solid var(--red);
+}
+.heading-texts h2{
+font-family: "Playwrite HR", cursive;;
+font-size: 5rem;
+}
+.heading-texts h4{
+font-family: "Roboto", sans-serif;
+
+font-size: 3rem;
+justify-content: left;
+padding: 2rem;
+text-align:center;
+}
+.buildings-image{
+    display: block;
+    position: absolute;
+    bottom: 0;
+   
+}
+.buildings-image img{
+    background-size:contain;
+    display: none;
+}
+#cloud1{
+    position: absolute;
+    left: 9%;
+    bottom: 2%;
+}
+#cloud2{
+    position: absolute;
+    right: 9%;
+    top: 5%;
+}
+
+.main-elements{
+  
+    width: 100%;
+    display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ position: relative;
+    margin-top: 1%;
+    
+
+
+}
+.headshot-image{
+    margin-top: 2%;
+   
+}
+.headshot-image img{
+   
+    height: auto;
+    border-radius: 50%;
+    background-size: cover;
+    
+}
+.main-texts{
+    text-align: center;
+    max-width: 100%;
+    display: block;
+   
+    padding: 10px;
+}   
+.main-texts h2{
+  font-size: 2.5rem;
+  margin-top: 5%;
+    letter-spacing: 2px;
+}
+
+.main-texts p{
+    font-size: 1.5rem;
+    margin-top: 3%;
+   width: 900px;
+    color: black;
+    border: 1px solid transparent;
+    padding: 2px;
+    
+}
+.skills{
+    margin-top: 4%;
+    text-align: center;
+}
+.skills h2{
+font-size: 2rem;
+letter-spacing: 1px;
+}
+.gif-text-align{
+    margin-top: 5%;
+    max-width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    position: relative;
+  
+}
+.gif img{
+   height: 170px;
+   width: 170px;
+ 
+
+}
+.skill-texts{
+  
+    padding-left: 16px;
+    color:black;
+   display: block;
+   max-width: 400px;
+   flex-wrap: wrap;
+  position: relative;
+ 
+   
+}
+.skill-texts h2{
+    margin-top: 0px;
+    font-size: 2rem;
+    text-align: left;
+  
+ 
+}
+.skill-texts p{
+    margin-top: 3%;
+    max-width: 100%;
+    color:black;
+    text-align: left;
+    font-size: 1.2rem;
+
+}
+.footer{
+    margin-top: 0;
+    max-width: 100%;
+    text-align: center;
+    display: block;
+   
+    position: relative;
+}
+.contacts{
+    margin-top: 0;
+    
+   
+}
+.contacts h2{
+    font-size: 2rem;
+}
+.contacts h4{
+    margin-top: 20px;
+    color: black;
+   
+}
+.contacts p{
+    display: inline-flex;
+   align-items: center;
+   justify-content: center;
+    width: 600px;
+   
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 10px;
+    color: black;
+}
+.buttons{
+    margin-bottom: 30px;
+ 
+
+}
+.buttons a{
+    padding: 10px 20px;
+         border-radius: 10px;
+      background-color: var(--red);
+        text-decoration: none;
+        color: white;
+     
+        transition: transform  0.4s ease;
+}
+
+.buttons a:hover {
+    transform: scale(1.2);
+    background-color: #f17676;
+}
+
+.links{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    background-color: var(--red);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.links a{
+  position: relative;
+ 
+    color: white;
+    padding: 8px;
+}
+.links h6{
+    position: absolute;
+    bottom: 5px;
+    color: white;
+}
