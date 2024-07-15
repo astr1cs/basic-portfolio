@@ -85,28 +85,34 @@ overflow-y: hidden;
     
 }
 .main-texts{
-    text-align: center;
-    max-width: 100%;
-    display: block;
-    padding: 10px;
+    display: inline-block;
+    width: 100%;
+
 }   
 .main-texts h2{
+    text-align: center;
   font-size: 2.5rem;
+ 
   margin-top: 5%;
+
     letter-spacing: 2px;
 }
 
 .main-texts p{
+    text-align: center;
     font-size: 1.2rem;
-    margin-top: 3%;
-   width: 900px;
+    display: block;
+    display: inline-block;
+    padding: 10px;
+    max-width: 700px;
+    margin-top: 10px;
     color: black;
-    border: 1px solid transparent;
-    padding: 2px;
+
+   
     
 }
 .skills{
-    margin-top: 4%;
+    margin-top: 40px;
     text-align: center;
 }
 .skills h2{
@@ -114,18 +120,19 @@ font-size: 2rem;
 letter-spacing: 1px;
 }
 .gif-text-align{
-    margin-top: 5%;
-    max-width: 100%;
-    height: 300px;
+    margin-top: 20px;
+    max-width: 700px;
+   justify-content: center;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     position: relative;
+    
   
 }
 .gif img{
-   height: 170px;
-   width: 170px;
+   height: 200px;
+   width: 250px;
 
 }
 .skill-texts{
@@ -133,8 +140,7 @@ letter-spacing: 1px;
     padding-left: 16px;
     color:black;
    display: block;
-   max-width: 400px;
-  
+   width: 100%;
   position: relative;
  
    
@@ -147,53 +153,61 @@ letter-spacing: 1px;
  
 }
 .skill-texts p{
-    margin-top: 2%;
+    margin-top: 10px;
     padding: 5px;
-    max-width: 100%;
+  
+  
     color:black;
     text-align: left;
     font-size: 1.2rem;
     display: block;
 }
 .footer{
-    margin-top: 0;
+   display: inline-block;
    width: 100%;
     text-align: center;
-   
     position: relative;
+
 }
+
 .contacts{
-    margin-top: 0;
-   
+    width: 100%;
 }
 .contacts h2{
-    margin-top: 30px;
+  
+    padding: 5px;
     font-size: 2rem;
     padding: 5px;
 }
 .contacts h4{
-    margin-top: 20px;
-    color: black;
+    margin-top: 5px;
     padding: 5px;
+    color: black;
+   
    
 }
+
 .contacts p{
-    padding: 5px;
-    display: flex;
-    width: 40%;
-    margin-left: 30%;
-    margin-top: 10px;
-    text-align: center;
-    padding: 10px;
+   
     color: black;
+    display: inline-block;
+ text-align: center;
+    max-width: 600px;
+    margin-top: 05px;
+    padding: 5px;
+   
+
+   
+
+ 
 }
 
 
 /* Custom button styles */
 .custom-button {
+    margin-top: 15px;
     background-color:var(--red);
- 
-   
+
     border-radius: 10px; 
     padding: 10px 20px; 
     font-size: 1rem; 
@@ -234,165 +248,51 @@ letter-spacing: 1px;
     bottom: 5px;
     color: white;
 }
-@media  (max-width:1000px)
+
+@media (max-width:510px)
 {
-
-
-    .parent-texts{
-        overflow: hidden;
-        height:600px;
+    .gif-text-align{
+        margin-top: 20px;
+        max-width: 700px;
+       justify-content: center;
         display: flex;
-        justify-content: center;
-        color: var(--red);
+        flex-direction: column;
         align-items: center;
         position: relative;
-       background-image:linear-gradient(to bottom ,#ffcfe8,#ffe7f3);
+        
+      
+    }
+    .gif img{
+       height: 200px;
+       width: 250px;
     
     }
-    .heading-texts h2{
-        width: 100%;
-        padding: 0px;
-        margin-right: 15%;
-    font-family: "Playwrite HR", cursive;;
-    font-size: 5rem;
-    }
-    .heading-texts p{
-        width: 100%;
+    .skill-texts{
+      
        
-       
+        color:black;
+        
+       text-align: center;
+       width: 100%;
    
-    }
-    .headshot-image img{
-        width: 50%;
-        margin-left: 25%;
-        height: auto;
-        border-radius: 50%;
-        background-size: cover;
-        
-    }
-    .main-elements{
-  
-        width: 100%;
-        display: block;
-     position: relative;
-       
-       
-    }
-    .main-texts{
-        text-align: center;
-        max-width: 100%;
-        display:block;
-        
-    }   
-    .main-texts h2{
-      font-size: 2.5rem;
-      margin-top: 5%;
-        letter-spacing: 2px;
-    }
-    
-    .main-texts p{
-        display: block;
-        font-size: 1.2rem;
-        margin-top: 3%;
-
-        width: 100%;
-        color: black;
-        border: 1px solid transparent;
-        
-    }
-    .skill-texts{
-  
-        padding-left: 16px;
-        color:black;
-    
-       
-    
-       left: 0%;
-
-      position: relative;
-     
-    }
-    .gif {
-        width:50%;
-        left: 25%;
-       position: relative;
-    }
-
-
-
-
-}
-@media (max-width:590px)
-{
-    .skill-texts{
-  
-        display: inline-block;
-        color:black;
-      position: relative;
      
        
     }
     .skill-texts h2{
-        margin-top: 10px;
+       
+        margin-top: 5px;
         font-size: 2rem;
         text-align: center;
       
      
     }
     .skill-texts p{
-        margin-top: 3%;
-        width: 100%;
+        margin-top: 5px;
+        padding: 5px;
+      
         color:black;
         text-align: center;
         font-size: 1.2rem;
-        
-    }
-    .gif-text-align{
-        margin-top: 5%;
-        width: 100%;
-        margin-left: 0%;
-        height: 400px;
-        display: flex;
-        justify-self: center;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-      
-    }
-  
-    .gif img{
-        height: 170px;
-        width: 170px;
-        position: relative;
-     }
-
-     .contacts p{
         display: block;
-        text-align: center;
-  
-        width: 100%;
-       
-        margin-left: 0%;
-      
-        margin-top: 10px;
-        margin-bottom: 10px;
-        padding: 10px;
-        color: black;
     }
-
-
-     }
-@media (max-width:455px)
-{
-    .heading-texts h4{
-        position: relative;
-        text-align: left;
-        }
-        #cloud1{
-            padding: 0;
-            left: 0;
-            bottom: 0;
-            display: block;
-            position: absolute;
-        }
 }
